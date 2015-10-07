@@ -1,0 +1,65 @@
+New log file opened at Wed Oct 07 19:10:57 IRKT 2015 by 4088@Aljona
+Taking next connection to: 49238
+New client attempting to connect on port: 49239-49238
+  Address = /192.168.0.12:49238
+This client on port 49239 has uuid 84e60438-ea36-43c6-b1c6-8384014a0ffb configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-84e60438-ea36-43c6-b1c6-8384014a0ffb
+Taking next connection to: 49238
+New client attempting to connect on port: 49240-49238
+  Address = /192.168.0.12:49238
+Handshake exception on socket: 49240
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 49238
+New client attempting to connect on port: 49241-49238
+  Address = /192.168.0.12:49238
+This client on port 49241 has uuid ae20836a-c077-4683-b334-161795dda419 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-84e60438-ea36-43c6-b1c6-8384014a0ffb, activator-ae20836a-c077-4683-b334-161795dda419
+Taking next connection to: 49238
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49238
+New client attempting to connect on port: 49352-49238
+  Address = /192.168.0.12:49238
+Handshake exception on socket: 49352
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 49238
+New client attempting to connect on port: 49353-49238
+  Address = /192.168.0.12:49238
+This client on port 49353 has uuid 772d8569-5af2-4cb1-a4f2-d298e1a5a9bf configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-ae20836a-c077-4683-b334-161795dda419, play-fork-run-772d8569-5af2-4cb1-a4f2-d298e1a5a9bf
+Taking next connection to: 49238
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49238
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49238
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+1 daemon clients are connected.
+Server socket thread exiting.
+1 clients open, will close them...
+All client sockets have been closed.
+Closing the 4088@Aljona logs at Wed Oct 07 19:26:33 IRKT 2015, goodbye.

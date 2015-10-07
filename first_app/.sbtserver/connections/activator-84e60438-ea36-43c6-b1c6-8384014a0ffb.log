@@ -1,0 +1,9 @@
+New log file opened at Wed Oct 07 19:11:24 IRKT 2015 by 4088@Aljona
+Sending msg to client activator-84e60438-ea36-43c6-b1c6-8384014a0ffb: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: D:\playframework\typesafe-activator-1.3.6-minimal\activator-1.3.6-minimal\first_app\.sbtserver\connections\master.log))
+Sending msg to client activator-84e60438-ea36-43c6-b1c6-8384014a0ffb: DetachedLogEvent(LogMessage(debug,sbt client logs are in: D:\playframework\typesafe-activator-1.3.6-minimal\activator-1.3.6-minimal\first_app\.sbtserver\connections\activator-84e60438-ea36-43c6-b1c6-8384014a0ffb.log))
+Sending msg to client activator-84e60438-ea36-43c6-b1c6-8384014a0ffb: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: D:\playframework\typesafe-activator-1.3.6-minimal\activator-1.3.6-minimal\first_app\.sbtserver\master.log))
+Reading next message from client.
+Client activator-84e60438-ea36-43c6-b1c6-8384014a0ffb EOF, shutting down.
+Stopping client.
+Dropping message (0,ReceivedResponse()) to dead client activator-84e60438-ea36-43c6-b1c6-8384014a0ffb
+Client activator-84e60438-ea36-43c6-b1c6-8384014a0ffb thread exiting.

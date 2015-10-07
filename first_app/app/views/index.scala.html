@@ -1,0 +1,43 @@
+@(tasks: List[Task], taskForm: Form[Task])
+
+@import helper._
+
+@main("PhoneBook") {
+
+<h1>@tasks.size() record(s)</h1>
+
+<table style="text-align: center;">
+    <tr style="background-color: #268E09; color: white">
+        <th width="200">Name</th>
+        <th width="200">Home phone number</th>
+        <th width="200">Mobile phone number</th>
+    </tr>
+    @for(task <- tasks) {
+
+    <tr style="background-color: #A9FF91">
+        <td>@task.label</td>
+        <td>@task.home</td>
+        <td>@task.mobile</td>
+
+
+
+        @form(routes.Application.deleteTask(task.id)) {
+        <td><input type="submit" value="Delete"></td>
+        }
+    </tr>
+    }
+</table>
+
+<h2>Add a new record</h2>
+
+@form(routes.Application.newTask()) {
+
+@inputText(taskForm("label"), '_label -> "Name:")
+@inputText(taskForm("home"), '_label -> "Home phone number:")
+@inputText(taskForm("mobile"), '_label -> "Mobile phone number:")
+
+<input type="submit" value="Create">
+
+}
+
+}
